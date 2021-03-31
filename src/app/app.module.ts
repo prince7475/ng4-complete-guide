@@ -9,13 +9,11 @@ import { RecipesComponent } from './Main/Features/Recipe-Book/Recipes/Recipes.co
 import { ShoppingListEditComponent } from './Main/Features/Shopping-List/Shopping-List-Edit/Shopping-List-Edit.component';
 import { ShoppingListComponent } from './Main/Features/Shopping-List/Shopping-List/Shopping-List.component';
 import { HeaderComponent } from './Main/Header/Header/Header.component';
-import { IngredientComponent } from './Main/Models/Ingredient/Ingredient.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    IngredientComponent,
     ShoppingListComponent,
     ShoppingListEditComponent,
     RecipeDetailComponent,
