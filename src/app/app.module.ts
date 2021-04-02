@@ -10,6 +10,7 @@ import { ShoppingListEditComponent } from './Main/Features/Shopping-List/Shoppin
 import { ShoppingListComponent } from './Main/Features/Shopping-List/Shopping-List/Shopping-List.component';
 import { HeaderComponent } from './Main/Header/Header/Header.component';
 import { DropdownDirective } from './Shared/directives/dropdown/dropdown.directive';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { DropdownDirective } from './Shared/directives/dropdown/dropdown.directi
     DropdownDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
