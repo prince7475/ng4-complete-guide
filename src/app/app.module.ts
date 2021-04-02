@@ -9,6 +9,8 @@ import { RecipesComponent } from './Main/Features/Recipe-Book/Recipes/Recipes.co
 import { ShoppingListEditComponent } from './Main/Features/Shopping-List/Shopping-List-Edit/Shopping-List-Edit.component';
 import { ShoppingListComponent } from './Main/Features/Shopping-List/Shopping-List/Shopping-List.component';
 import { HeaderComponent } from './Main/Header/Header/Header.component';
+import { DropdownDirective } from './Shared/directives/dropdown/dropdown.directive';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -19,10 +21,12 @@ import { HeaderComponent } from './Main/Header/Header/Header.component';
     RecipeDetailComponent,
     RecipeItemComponent,
     RecipeListComponent,
-    RecipesComponent
+    RecipesComponent,
+    DropdownDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

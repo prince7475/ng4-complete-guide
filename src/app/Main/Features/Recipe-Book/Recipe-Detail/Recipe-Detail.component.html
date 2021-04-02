@@ -11,16 +11,14 @@
 </div>
 
 <div class="row">
-  <div class="col-xl-12">
-    <div class="btn-group">
-      <button class="btn btn-primary dropdown-toggle">Manage Recipe <span class="caret"></span></button>
-      <ul class="dropdown-menu">
-        <li>
-          <a href="#">To Shopping List</a>
-          <a href="#">Edit Recipe</a>
-          <a href="#">Delete Recipe</a>
-        </li>
-      </ul>
+  <div class="col">
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-primary dropdown-toggle" id='manageRecipeDropDown' ngbDropdownToggle> Manage Recipe <span class="caret"></span></button>
+      <div ngbDropdownMenu aria-labelledby="manageRecipeDropDown">
+          <button ngbDropdownItem>To Shopping List</button>
+          <button ngbDropdownItem>Edit Recipe</button>
+          <button ngbDropdownItem>Delete Recipe</button>
+      </div>
     </div>
   </div>
 </div>
