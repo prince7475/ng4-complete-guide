@@ -11,6 +11,7 @@ import { ShoppingListComponent } from './Main/Features/Shopping-List/Shopping-Li
 import { HeaderComponent } from './Main/Header/Header/Header.component';
 import { DropdownDirective } from './Shared/directives/dropdown/dropdown.directive';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { RecipesService } from './Main/Features/Recipe-Book/Services/recipes.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     NgbModule
   ],
-  providers: [],
+  providers: [RecipesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
