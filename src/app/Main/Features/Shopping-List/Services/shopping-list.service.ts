@@ -24,5 +24,9 @@ onAddIngredients(ingredient: Ingredient){
   this.ingredients.push(ingredient)
   this.newIngredientsAdded.emit(this.ingredients.slice())
 }
+onAddListOfIngredients(ingredients: Ingredient[] ){
+this.ingredients.push(...ingredients)
+this.newIngredientsAdded.emit(this.ingredients.slice())
+}
 
 }

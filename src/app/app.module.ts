@@ -29,7 +29,7 @@ import { RecipesService } from './Main/Features/Recipe-Book/Services/recipes.ser
     BrowserModule,
     NgbModule
   ],
-  providers: [],
+  providers: [RecipesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
