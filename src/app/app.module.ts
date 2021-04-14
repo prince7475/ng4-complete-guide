@@ -12,6 +12,8 @@ import { HeaderComponent } from './Main/Header/Header/Header.component';
 import { DropdownDirective } from './Shared/directives/dropdown/dropdown.directive';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RecipesService } from './Main/Features/Recipe-Book/Services/recipes.service';
+import { AppRoutingModule } from './Routes/app-routing-module';
+import { RecipeStartComponent } from './Main/Features/Recipe-Book/recipe-start/recipe-start.component';
 
 @NgModule({
   declarations: [
@@ -23,11 +25,13 @@ import { RecipesService } from './Main/Features/Recipe-Book/Services/recipes.ser
     RecipeItemComponent,
     RecipeListComponent,
     RecipesComponent,
-    DropdownDirective
+    DropdownDirective,
+    RecipeStartComponent
   ],
   imports: [
     BrowserModule,
-    NgbModule
+    NgbModule,
+    AppRoutingModule
   ],
   providers: [RecipesService],
   bootstrap: [AppComponent]
