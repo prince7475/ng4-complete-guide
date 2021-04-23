@@ -1,7 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Data, Router } from '@angular/router';
-import { Recipe } from '../Recipes/models/recipe.mode';
-import { RecipesService } from '../Services/recipes.service';
+import { Recipe } from '../../Recipes/models/recipe.mode';
+import { RecipesService } from '../../Services/recipes.service';
 
 @Component({
   selector: 'app-Recipe-Detail',
@@ -22,7 +22,6 @@ export class RecipeDetailComponent implements OnInit {
   ngOnInit() {
   this.activeRoute.data.subscribe((data: Data) =>  {
     this.currentRecipeToDisplay = data['recipe']
-    console.log(`this.currentRecipeToDisplay`, this.currentRecipeToDisplay)
   })
   }
 
