@@ -8,10 +8,4 @@ import { Recipe } from './Main/Features/Recipe-Book/Recipes/models/recipe.mode';
 })
 export class AppComponent {
 
-  displayCurrentFeature = 'recipe'
-
-  onNavigate(feature: string){
-    this.displayCurrentFeature = feature;
-  }
-
 }

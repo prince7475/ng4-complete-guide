@@ -1,19 +1,19 @@
-<nav class="navbar navbar-light bg-light navbar-expand-md"> <a href="#" class="navbar-brand">Recipe Book</a>
+<nav class="navbar navbar-light bg-light navbar-expand-md"> <a  routerLink='/' class="navbar-brand">Recipe Book</a>
   <div class="collapse navbar-collapse">
     <ul class="nav navbar-nav">
-      <li class="nav-item" ><a (click)="onSelect('recipe')" href="#" class="nav-link" >Recipes</a>
+      <li class="nav-item" routerLinkActive='active' ><a routerLink='/' class="nav-link" >Recipes</a>
       </li>
-      <li class="nav-item"><a href="#" class="nav-link" (click)="onSelect('shopping-list')">Shopping List</a>
+      <li class="nav-item" routerLinkActive='active'><a routerLink='/shopping-list' class="nav-link">Shopping List</a>
       </li>
     </ul>
     <ul class="nav navbar-nav ml-auto">
       <li ngbDropdown class="d-inline-block"> 
-        <a href="#" class="dropdown-toggle nav-link" role="button" id='manageNavDropDown' ngbDropdownToggle>Manage <span class="caret"></span></a>
+        <a  class="dropdown-toggle nav-link" role="button" id='manageNavDropDown' ngbDropdownToggle>Manage <span class="caret"></span></a>
         <ul
           ngbDropdownMenu aria-labelledby="manageNavDropDown">
-          <li ngbDropdownItem><a href="#">Save Data</a>
+          <li style="cursor: pointer" ngbDropdownItem><a >Save Data</a>
           </li>
-          <li ngbDropdownItem><a href="#">Fetch Data</a>
+          <li style="cursor: pointer" ngbDropdownItem><a >Fetch Data</a>
           </li>
         </ul>
       </li>

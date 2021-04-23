@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
 import { Recipe } from '../Recipes/models/recipe.mode';
 import { RecipesService } from '../Services/recipes.service';
 
@@ -22,4 +23,5 @@ export class RecipeListComponent implements OnInit {
   onSelectedRecipe(recipe: Recipe){
     this.recipesService.onDisplayRecipeDetails(recipe)
   }
+
 }
