@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Recipe } from './Main/Features/Recipe-Book/Recipes/models/recipe.mode';
 
 @Component({
   selector: 'app-root',
