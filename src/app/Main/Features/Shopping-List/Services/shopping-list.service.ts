@@ -1,4 +1,5 @@
 import { EventEmitter, Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 import { Ingredient } from 'src/app/Shared/Model/Ingredient.model';
 
 @Injectable({
@@ -12,7 +13,7 @@ export class ShoppingListService {
     new Ingredient("Coffee", 5),
   ]
 
-  newIngredientsAdded = new EventEmitter<Ingredient[]>()
+  newIngredientsAdded = new Subject<Ingredient[]>()
 
 constructor() { }
 
@@ -22,11 +23,11 @@ getIngredients(): Ingredient[]{
 
 onAddIngredients(ingredient: Ingredient){
   this.ingredients.push(ingredient)
-  this.newIngredientsAdded.emit(this.ingredients.slice())
+  this.newIngredientsAdded.next(this.ingredients.slice())
 }
 onAddListOfIngredients(ingredients: Ingredient[] ){
 this.ingredients.push(...ingredients)
-this.newIngredientsAdded.emit(this.ingredients.slice())
+this.newIngredientsAdded.next(this.ingredients.slice())
 }
 
 }
